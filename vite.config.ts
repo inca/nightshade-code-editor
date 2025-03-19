@@ -9,7 +9,7 @@ export default defineConfig({
             },
             name: 'nightshade-code-editor',
             formats: ['es'],
-            cssFileName: 'bundle',
+            cssFileName: 'components',
         },
         rollupOptions: {
             external: ['vue'],

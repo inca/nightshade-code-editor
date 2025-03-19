@@ -5,11 +5,10 @@
     "type": "module",
     "exports": {
         ".": "./dist/bundle.js",
-        "./stylesheets.css": "./dist/bundle.css"
+        "./components.css": "./dist/components.css"
     },
     "files": [
-        "dist",
-        "stylesheets"
+        "dist"
     ],
     "scripts": {
         "dev": "vite --host",

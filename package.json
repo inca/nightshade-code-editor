@@ -4,7 +4,10 @@
     "description": "Code editor Nightshade component",
     "type": "module",
     "exports": {
-        ".": "./dist/bundle.js",
+        ".": {
+            "types": "./dist/lib/index.d.ts",
+            "import": "./dist/bundle.js"
+        },
         "./components.css": "./dist/components.css"
     },
     "files": [
@@ -20,7 +23,7 @@
     "author": "Boris Okunskiy",
     "license": "ISC",
     "peerDependencies": {
-        "nightshade": "^1.0.1",
+        "nightshade": "^1.0.3",
         "vue": "^3.5.13"
     },
     "devDependencies": {

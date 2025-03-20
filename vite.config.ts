@@ -20,7 +20,6 @@ export default defineConfig({
         vue(),
         dts({
             include: ['lib/**'],
-            outDir: 'dist/types',
         }),
     ],
     esbuild: {

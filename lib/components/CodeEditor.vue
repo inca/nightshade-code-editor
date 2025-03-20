@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import { InputBase } from 'nightshade/components';
+import { InputBase } from 'nightshade';
 
 import { loadCodeMirror } from '../codemirror.ts';
 

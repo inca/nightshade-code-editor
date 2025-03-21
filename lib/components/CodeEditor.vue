@@ -140,10 +140,6 @@ export default {
 </style>
 
 <style scoped>
-.CodeEditor {
-    --InputBase-padding: 0;
-}
-
 .Editor {
     flex: 1;
     position: relative;
@@ -151,7 +147,7 @@ export default {
     display: flex;
     min-height: 0;
     min-width: 0;
-    padding: var(--sp) 0;
+    margin: 0 calc(-1 * var(--InputBase-padding));
 }
 </style>
 

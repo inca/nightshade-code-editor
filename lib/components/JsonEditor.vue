@@ -2,7 +2,6 @@
     <div class="JsonEditor">
         <CodeEditor
             v-bind="{
-                ...$attrs,
                 ...$props,
                 modelValue: stringValue,
                 language: 'json',
@@ -72,6 +71,12 @@ export default {
 </script>
 
 <style scoped>
+.JsonEditor {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
 .Error {
     display: flex;
     padding: var(--sp);

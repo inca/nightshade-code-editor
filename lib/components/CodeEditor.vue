@@ -2,7 +2,6 @@
     <InputBase
         class="CodeEditor"
         v-bind="{
-            ...$attrs,
             ...$props,
             fixedHeight: false,
         }">
@@ -146,6 +145,7 @@ export default {
 <style scoped>
 .Editor {
     flex: 1;
+    align-self: stretch;
     position: relative;
     overflow: auto;
     display: flex;

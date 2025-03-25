@@ -3,6 +3,10 @@
         <CodeEditor
             :modelValue="stringValue"
             :label="label"
+            v-bind="{
+                ...$attrs,
+                ...$props
+            }"
             language="json"
             @update:modelValue="onUpdate($event)" />
         <div

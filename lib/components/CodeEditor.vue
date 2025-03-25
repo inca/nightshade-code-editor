@@ -1,6 +1,10 @@
 <template>
     <InputBase
         class="CodeEditor"
+        v-bind="{
+            ...$attrs,
+            ...$props
+        }"
         :fixedHeight="false"
         :label="label">
         <div

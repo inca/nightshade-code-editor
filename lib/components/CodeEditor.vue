@@ -3,10 +3,9 @@
         class="CodeEditor"
         v-bind="{
             ...$attrs,
-            ...$props
-        }"
-        :fixedHeight="false"
-        :label="label">
+            ...$props,
+            fixedHeight: false,
+        }">
         <div
             ref="editor"
             class="Editor"
@@ -26,6 +25,7 @@ export default {
     },
 
     props: {
+        ...InputBase.props,
         modelValue: { type: String },
         label: { type: String },
         language: { type: String, default: 'javascript' },

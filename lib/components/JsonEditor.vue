@@ -1,13 +1,12 @@
 <template>
     <div class="JsonEditor">
         <CodeEditor
-            :modelValue="stringValue"
-            :label="label"
             v-bind="{
                 ...$attrs,
-                ...$props
+                ...$props,
+                modelValue: stringValue,
+                language: 'json',
             }"
-            language="json"
             @update:modelValue="onUpdate($event)" />
         <div
             v-if="error"
@@ -18,6 +17,8 @@
 </template>
 
 <script>
+import { InputBase } from 'nightshade';
+
 import CodeEditor from './CodeEditor.vue';
 
 export default {
@@ -27,6 +28,7 @@ export default {
     },
 
     props: {
+        ...InputBase.props,
         modelValue: {},
         label: { type: String },
     },

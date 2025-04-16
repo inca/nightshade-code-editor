@@ -1,6 +1,6 @@
 {
     "name": "nightshade-code-editor",
-    "version": "1.0.13",
+    "version": "1.0.14",
     "description": "Code editor Nightshade component",
     "type": "module",
     "exports": {
